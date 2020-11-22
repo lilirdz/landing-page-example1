@@ -1,38 +1,225 @@
 .App {
   text-align: center;
+  margin: auto;
+  max-width: 1500px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App a {
+  color: #858891;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App a:hover {
+  text-decoration: none;
+  color: #858891;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero {
+  background-image: url("./images/plant.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30em;
+  text-align: left;
+  padding-top: 8em;
+}
+
+.hero-row {
+  width: 70%;
+  max-width: 70%;
+}
+
+.hero-row h2 {
+  font-size: 4em;
+}
+
+.hero-row2 {
+  text-align: center;
+}
+
+.services {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.services-row1 {
+  padding-top: 4em;
+  padding-bottom: 6em;
+}
+
+.box1 {
+  background-image: url("./images/droplet.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 20em;
+  height: 14em;
+  position: relative;
+  transition: 0.3s;
+  box-shadow: 0px 4px 10px rgba(25, 4, 69, 0.3);
+}
+
+.box2 {
+  background-image: url("./images/plants.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 20em;
+  height: 14em;
+  position: relative;
+  transition: 0.3s;
+  box-shadow: 0px 4px 10px rgba(25, 4, 69, 0.3);
+}
+
+.box3 {
+  background-image: url("./images/cherry-blossom.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 20em;
+  height: 14em;
+  position: relative;
+  transition: 0.3s;
+  box-shadow: 0px 4px 10px rgba(25, 4, 69, 0.3);
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover {
+  transform: translate(0, -10px);
+}
+
+.box1 p,
+.box2 p,
+.box3 p {
+  background-color: white;
+  color: #000000;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  font-size: 2em;
+  width: 70%;
+}
+
+.diff-container {
+  background-image: url("./images/blue-flowers.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30em;
+  position: relative;
+  margin-bottom: 6em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.diff-container h2 {
+  background-color: #000000;
   color: white;
+  position: absolute;
+  margin-top: 1.5em;
+  width: 60%;
+  font-size: 4em;
 }
 
-.App-link {
-  color: #61dafb;
+.diff-container a {
+  margin-top: 12em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.team {
+  margin-bottom: 6em;
+}
+
+.team h2 {
+  font-weight: bolder;
+}
+
+.team-member {
+  width: 10em;
+  height: 10em;
+  margin: 3em;
+  transition: transform 0.2s;
+}
+
+.team-member:hover {
+  transform: scale(1.5);
+}
+
+.contact-form {
+  text-align: center;
+  padding-bottom: 10em;
+}
+
+.sign-up-text {
+  color: #777777;
+  font-size: large;
+}
+
+.footer {
+  text-align: left;
+  padding-bottom: 4em;
+}
+
+.footer-list {
+  list-style: none;
+  padding-left: 0;
+  color: #858891;
+}
+
+.subscribe-text {
+  color: #858891;
+}
+
+.email-box {
+  background-color: #f2f4f8;
+  color: #858891;
+  border: 2px solid #c9ced6;
+  border-right: none;
+  padding-left: 10px;
+  height: 3em;
+  width: 14em;
+}
+
+.subscribe-btn {
+  background-color: #fbd54a;
+  color: black;
+  text-transform: uppercase;
+  height: 3em;
+  width: 8em;
+  border: none;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.name,
+.email {
+  border: 2px solid #c9ced6;
+  color: #858891;
+  padding-left: 10px;
+  width: 20em;
+  height: 3em;
+  box-shadow: 0px 4px 10px rgba(25, 4, 69, 0.2);
+}
+
+.contact-form-row2 {
+  margin-top: 3em;
+}
+
+.form-subscribe-btn,
+.learn-more-btn {
+  background-color: #fbd54a;
+  color: black;
+  text-transform: uppercase;
+  height: 3em;
+  width: 12em;
+  border: none;
+}
+
+.form-subscribe-btn:hover,
+.learn-more-btn:hover,
+.subscribe-btn:hover {
+  color: white;
+  opacity: 0.9;
 }
